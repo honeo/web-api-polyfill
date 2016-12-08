@@ -6,7 +6,7 @@ console.log('test/index.js')
 
 // Modules
 // require('babel-polyfill');
-const isPolyfill = require('../bundle.js');
+const isPolyfill = require('../bundle.min.js');
 
 // Var
 const obj = {}

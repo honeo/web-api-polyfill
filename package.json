@@ -2,7 +2,7 @@
   "name": "web-api-polyfill",
   "version": "1.0.0",
   "description": "WebAPIのPolyfill詰め合わせ",
-  "main": "bundle.js",
+  "main": "bundle.min.js",
   "scripts": {
     "build": "webpack --config src/webpack.config.js",
     "test": "node test/test.js"
