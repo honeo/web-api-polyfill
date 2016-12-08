@@ -1,5 +1,5 @@
 {
-  "name": "web-api-polyfill",
+  "name": "@honeo/web-api-polyfill",
   "version": "1.0.0",
   "description": "WebAPIのPolyfill詰め合わせ",
   "main": "bundle.min.js",
