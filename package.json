@@ -1,6 +1,6 @@
 {
   "name": "@honeo/web-api-polyfill",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WebAPIのPolyfill詰め合わせ",
   "main": "bundle.min.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "babel-preset-latest": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
     "dom4": "^1.8.0",
-    "web-animations-js": "^2.1.3",
+    "web-animations-js": "2.2.1",
     "whatwg-fetch": "^1.0.0",
     "opener": "^1.4.2",
     "script-loader": "^0.7.0",

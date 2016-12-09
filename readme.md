@@ -78,7 +78,8 @@ add,removeEventListener(,,object)
 * Firefox
  * SDK, WebExtensionsともに、拡張機能のContentsScript内コンテキストではパーミッションエラーが出て動作しない。  
 * Safari
- * v5.1.7で[TypeError: setting a property that has only a getter]
+ * Safari v5.1.7とPolyfill v2.2.2で[TypeError: setting a property that has only a getter]が発生する。
+ * Polyfill v2.2.1に固定中。
 
 ### XMLHttpRequest, FormData
 * [polyfill/xhr.js at master · inexorabletash/polyfill](https://github.com/inexorabletash/polyfill/blob/master/xhr.js)

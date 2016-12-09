@@ -84,15 +84,19 @@ location.origin || (location.origin = location.protocol + '//' + location.host);
 
 /*
 	Web Animation API
-		globalコンテキストで実行する
-	読み込みについて
-		windowコンテキストで実行する必要がある？
-		素のrequireやimports-loaderだとChromeで[TypeError: Cannot set property 'true' of undefined]
-		script-loaderだとSafari5.1.7で[TypeError: setting a property that has only a getter]
+
+	不具合
+		読み込みについて
+			以前はwindowコンテキストで実行する必要があった。
+			いつからかモジュールスコープでは完全に動かなくなり、importsからscript-loaderへ移行した。
+				素のrequireやimports-loaderだとChromeで[TypeError: Cannot set property 'true' of undefined]
+		Safari
+			web-animations-js 2.2.2とSafari v5.1.7で以下のエラーが発生する。
+				[TypeError: setting a property that has only a getter]
+			2.2.１までは問題ないからversion固定中。
 */
+require('script!web-animations-js');
 //require('imports?this=>window!web-animations-js');
-require('script?this=>window!web-animations-js');
-//require('web-animations-js');
 
 // window.fetch
 require('whatwg-fetch')
