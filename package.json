@@ -2,7 +2,7 @@
   "name": "@honeo/web-api-polyfill",
   "version": "1.0.1",
   "description": "WebAPIのPolyfill詰め合わせ",
-  "main": "bundle.min.js",
+  "main": "index_bundle.js",
   "scripts": {
     "build": "webpack --config src/webpack.config.js",
     "test": "node test/test.js"
@@ -17,15 +17,18 @@
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.9",
     "babel-polyfill": "^6.16.0",
-    "babel-preset-latest": "^6.16.0",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-stage-0": "^6.16.0",
+    "broadcast-channel": "^1.2.1",
     "dom4": "^1.8.0",
-    "web-animations-js": "2.2.1",
-    "whatwg-fetch": "^1.0.0",
+    "event-target": "^1.2.3",
     "opener": "^1.4.2",
     "script-loader": "^0.7.0",
+    "url-polyfill": "^1.0.13",
+    "web-animations-js": "2.2.1",
     "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2"
+    "webpack-dev-server": "^1.16.2",
+    "whatwg-fetch": "^1.0.0"
   },
   "directories": {
     "test": "test"

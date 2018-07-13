@@ -32,7 +32,10 @@ require('./lib/rAF');
 		コンテキストをwindowにして実行
 */
 // require('script!./lib/52f437d1451d12145264-a9d216c215bd7d03a2eeea24200cb58fad5fdab9/broadcastchannel');
-require('imports?this=>window!./lib/52f437d1451d12145264-a9d216c215bd7d03a2eeea24200cb58fad5fdab9/broadcastchannel');
+//require('imports?this=>window!./lib/52f437d1451d12145264-a9d216c215bd7d03a2eeea24200cb58fad5fdab9/broadcastchannel');
+if( typeof window.BroadcastChannel!=='function' ){
+	window.BroadcastChannel = require('broadcast-channel');
+}
 
 /*
 	DOM Level 4
@@ -99,6 +102,12 @@ require('script!web-animations-js');
 //require('imports?this=>window!web-animations-js');
 
 // window.fetch
-require('whatwg-fetch')
+require('whatwg-fetch');
+
+// window.EventTarget
+require('script!event-target/index.js'); // mainが/CJS/index.jsを読みに行くため直指定
+
+// window.URL
+require('script!url-polyfill');
 
 module.exports = true;

@@ -31,9 +31,7 @@ location.origin
 HTMLCollection, NodeListをIterableに。
 
 ### BroadcastChannel
-* [BroadcastChannel Polyfill](https://gist.github.com/inexorabletash/52f437d1451d12145264)
- * BroadcastChannelのStorageEvent実装。  
- * localStorageにゴミが残る不具合あり。
+* [pubkey/broadcast-channel: BroadcastChannel that works in New Browsers, Old Browsers, WebWorkers and NodeJs](https://github.com/pubkey/broadcast-channel#readme)
 
 ### CSS.supports
 * [termi/CSS.supports](https://github.com/termi/CSS.supports/)
@@ -41,6 +39,10 @@ HTMLCollection, NodeListをIterableに。
 
 ### DOMParser
 * [DOMParser HTML extension - Now a polyfill since HTML parsing was added to the DOMParser specification](https://gist.github.com/eligrey/1129031)
+
+### EventTarget
+* [WebReflection/event-target: The EventTarget Class Polyfill.](https://github.com/WebReflection/event-target)
+
 
 ### fetch
 * [github/fetch: A window.fetch JavaScript polyfill.](https://github.com/github/fetch)
@@ -74,6 +76,9 @@ add,removeEventListener(,,object)
 
 ### performance.now()
 * [performance.now() polyfill (aka perf.now())](https://gist.github.com/paulirish/5438650)
+
+### URL
+* [lifaon74/url-polyfill: Polyfill URL and URLSearchParams to match last ES7 specifications](https://github.com/lifaon74/url-polyfill#readme)
 
 ### Web Animations API
 * [web-animations/web-animations-js](https://github.com/web-animations/web-animations-js)

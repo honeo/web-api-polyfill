@@ -14,7 +14,7 @@ module.exports = {
 	entry: './src/index.js',
 	output: {
 		path: process.env.PWD,
-		filename: 'bundle.min.js',
+		filename: 'index_bundle.js',
 		libraryTarget: 'umd'
 	},
 	// module: {
@@ -31,11 +31,5 @@ module.exports = {
 	// 		}
 	// 	}]
 	// },
-	plugins: [
-		new webpack.optimize.UglifyJsPlugin({
-			compress: {
-				warnings: false
-			}
-		})
-	]
+	plugins: []
 }
