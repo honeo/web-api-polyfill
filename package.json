@@ -1,6 +1,6 @@
 {
   "name": "@honeo/web-api-polyfill",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "WebAPIのPolyfill詰め合わせ",
   "main": "index_bundle.js",
   "scripts": {
